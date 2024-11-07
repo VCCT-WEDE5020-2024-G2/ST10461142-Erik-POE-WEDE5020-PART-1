@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Home</title></head>
-    <link rel="icon" href="images/my_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="_contact.css" type="text/css">
+    <head><title>Contact</title>
+    <link rel="icon" href="_images/my_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="_index.css" type="text/css">
+    </head>
+
 <body>
    
-   
-    <h1 style="color: rgb(30, 223, 59)"><u><center></center></u></h1>
     <div class="navmenu">
         
         <ul> <br>
-		    <li><a href="Index.html"><img src="images/Home_icon.png" width="3" alt="Home Icon" type="image/x-icon"></a<font size="4" color="white">Home</font></a></li>
-            <li><a href="Blog.html"><img src="images/blog_icon.png" width="3" alt="Blog Icon" type="image/x-icon"></a<font size="4" color="white">Blog</font></a></li>
-            <li><a href="About Us.html"><img src="images/about_us_icon.png" width="3" alt="About Us Icon" type="image/x-icon"><font size="4" color="white">Abot Us</font></a></li>
-            <li><a href="FAQs.html"><img src="images/faqs_icon.png" width="3" alt="FAQs Icon" type="image/x-icon"><font size="4" color="white">FAQs</font></a></li>
-            <li><a href="Contact.html"><img src="images/contact_icon.png" width="3" alt="Contact Icon" type="image/x-icon"><font size="4" color="white">Contact</font></a></li>                                                         
+		    <li><a href="index.html"><img src="_images/Home_icon.png" width="3" alt="Home Icon" type="image/x-icon"><font size="4" color="white">Home</font></a></li>
+            <li><a href="blog.html"><img src="_images/blog_icon.png" width="3" alt="Blog Icon" type="image/x-icon"><font size="4" color="white">Blog</font></a></li>
+            <li><a href="about-us.html"><img src="_images/about_us_icon.png" width="3" alt="About Us Icon" type="image/x-icon"><font size="4" color="white">Abot Us</font></a></li>
+            <li><a href="faqs.html"><img src="_images/faqs_icon.png" width="3" alt="FAQs Icon" type="image/x-icon"><font size="4" color="white">FAQs</font></a></li>
+            <li><a href="contact.html"><img src="_images/contact_icon.png" width="3" alt="Contact Icon" type="image/x-icon"><font size="4" color="white">Contact</font></a></li>
             
     </div>
     
-    <div class="contact-container">
+    <div class="contact-page-container">
         <h1>Contact Safe Harbour</h1>
         <p><strong>Address:</strong></p>
         <p>1234 Peace Street, Cape Town, South Africa</p>
@@ -40,15 +40,57 @@
         </p>
     </div>
     <br>
+    <br>
+    <!-- Join Us Form -->
+    <div class="join-us-container">
+        <h2>Join Safe Harbour</h2><br>
+        <p>If you're interested in joining our mission to support refugees and asylum seekers, please fill out the form below. We would love to hear from you!</p>
+        <br>
     
-
-    <footer>
-        <p style="margin-left: 20px; margin-right: 20px; color: #641464;">
-            <a href="https://www.facebook.com">Facebook</a> |
-            <a href="https://www.twitter.com">Twitter</a> |
-            <a href="https://www.instagram.com">Instagram</a>
+        <form id="contactForm" name="joinForm" method="post" onsubmit="return validateJoinForm();"><br>
+            <label for="name">Full Name:</label><br>
+            <input style="color: #fffaaf;" type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        
+            <label for="email">Email:</label><br>
+            <input style="color: #fffaaf;" type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea style="color: #fffaaf;" id="message" name="message" placeholder="Why are you interested in joining us" rows="5" cols="30"></textarea><br><br>
+        
+            <input type="submit" value="Submit">
+        </form>
+        
+        <div id="confirmationMessage" style="display: none; color: #fffaaf; margin-top: 10px;">
+            We've received your message! We will get back to you soon.
+        </div>
+        
+        </form>
+        </div>
+    <br>
+    <br>
+    
+    
+    <footer id="footer">
+        <p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </p>
-        <p style="margin-left: 20px; margin-right: 20px;">&copy; 2024 Safe Harbour. All rights reserved.</p>
+        <p>&copy; 2024 Safe Harbour. All rights reserved.</p>
+        <p id="timestamp">time here</p>
     </footer>
+    
+    <script>
+        const timestampElement = document.getElementById("timestamp");
+        timestampElement.textContent = getCurrentTimestampString();
+    
+        function getCurrentTimestampString() {
+            const date = new Date();
+            return date.toLocaleString();
+        }
+    </script>
+</body>
+
+<script src="_index.js"></script>
 
 </html>

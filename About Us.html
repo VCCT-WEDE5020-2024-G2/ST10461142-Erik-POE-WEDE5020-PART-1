@@ -2,68 +2,63 @@
 <html lang="en">
 
 <head><title>About Us</title></head>
-    <link rel="icon" href="images/my_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="images/my_logo.png">
-    <link rel="stylesheet" href="_about.css" type="text/css">
+    <link rel="icon" href="_images/my_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="_index.css" type="text/css">
 
 <body>
     <div class="navmenu"><br>
         
         <ul>
-            <li><a href="Index.html"><img src="images/Home_icon.png" width="3" alt="Home Icon" type="image/x-icon"></a<font size="4" color="white">Home</font></a></li>
-            <li><a href="Blog.html"><img src="images/blog_icon.png" width="3" alt="Blog Icon" type="image/x-icon"></a<font size="4" color="white">Blog</font></a></li>
-            <li><a href="About Us.html"><img src="images/about_us_icon.png" width="3" alt="About Us Icon" type="image/x-icon"><font size="4" color="white">Abot Us</font></a></li>
-            <li><a href="FAQs.html"><img src="images/faqs_icon.png" width="3" alt="FAQs Icon" type="image/x-icon"><font size="4" color="white">FAQs</font></a></li>
-            <li><a href="Contact.html"><img src="images/contact_icon.png" width="3" alt="Contact Icon" type="image/x-icon"><font size="4" color="white">Contact</font></a></li>       
+            <li><a href="index.html"><img src="_images/Home_icon.png" width="3" alt="Home Icon" type="image/x-icon"><font size="4" color="white">Home</font></a></li>
+            <li><a href="blog.html"><img src="_images/blog_icon.png" width="3" alt="Blog Icon" type="image/x-icon"><font size="4" color="white">Blog</font></a></li>
+            <li><a href="about-us.html"><img src="_images/about_us_icon.png" width="3" alt="About Us Icon" type="image/x-icon"><font size="4" color="white">Abot Us</font></a></li>
+            <li><a href="faqs.html"><img src="_images/faqs_icon.png" width="3" alt="FAQs Icon" type="image/x-icon"><font size="4" color="white">FAQs</font></a></li>
+            <li><a href="contact.html"><img src="_images/contact_icon.png" width="3" alt="Contact Icon" type="image/x-icon"><font size="4" color="white">Contact</font></a></li>       
         </ul>
     
     </div>
 
-    <!-- Main Content -->
-     <br> </br>
-    <p style="margin-left: 20px; margin-right: 20px; margin-top: 100px;"><img src="images/my_logo.png" width="180" align="left" style="margin-right: 15px; margin-bottom: 10px; border-radius: 10px;">
+    <div class="about-paragraph">
+    <p style="margin-left: 20px; margin-right: 20px; margin-top: 100px;"><img src="_images/my_logo.png" width="180" align="left" style="margin-right: 15px; margin-bottom: 10px; border-radius: 10px;" alt="Safe Harbour Logo - Refugee Support Organization in Cape Town">
      <font size="5"><font size="6" type="Eras Bold ITC"><font size="7">A</font>t</font> Safe Harbour, we're committed to providing refuge, support, and hope to those who need it most. Your contribution, no matter how small, can help us continue to offer critical services to refugees and asylum seekers in Cape Town. Whether it's a one-time donation, regular support, or volunteering your time, every bit helps in building a safer, more compassionate community. Together, we can create a safe haven for those fleeing hardship. Join us today and be part of a movement that truly makes a difference.
             <br /><br />Imagine how the world would be if we still needed to wait minutes, hours, or even days, or even months to communicate with someone far away? Certainly, the privileges granted by this technology outweigh its risks when measured on the scale.
             <br>
             <br>
-            If you would like to learn more about our mission or find out how you can get involved, we encourage you to reach out to us at Safe Harbour. Whether you have questions about our services, are interested in partnership opportunities, or simply want to offer your support, our team is here to help. Please don't hesitate to contact us through our website or give us a call. Together, we can make a meaningful impact in the lives of those who need it most. Your voice, your time, and your generosity can make a world of difference.
+            If you would like to learn more about our mission or find out how you can get involved, we encourage you to reach out to us at Safe Harbour. Whether you have questions about our services, are interested in partnership opportunities, or simply want to offer your support, our team is here to help. Please don't hesitate to <a href="contact.html" style="text-decoration: none; color: green;" title="Contact Page">Contact us</a> through our website or give us a call. Together, we can make a meaningful impact in the lives of those who need it most. Your voice, your time, and your generosity can make a world of difference.
         </font></p>
     </p>
-    <br>
-    <br>
-    <br>
+    </div>
+    
+
     <br>
     <br>
     <br>
     <br>
     
-    <footer>
-        <p style="margin-left: 20px; margin-right: 20px;">
-            <a href="https://www.facebook.com/safeharbour">Facebook</a> |
-            <a href="https://www.twitter.com/safeharbour">Twitter</a> |
-            <a href="https://www.instagram.com/safeharbour">Instagram</a>
+    
+    
+    <footer id="footer">
+        <p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </p>
-        <p style="margin-left: 20px; margin-right: 20px;">&copy; 2024 Safe Harbour. All rights reserved.</p>
+        <p>&copy; 2024 Safe Harbour. All rights reserved.</p>
+        <p id="timestamp">time here</p>
     </footer>
+    
+    <script>
+        const timestampElement = document.getElementById("timestamp");
+        timestampElement.textContent = getCurrentTimestampString();
+    
+        function getCurrentTimestampString() {
+            const date = new Date();
+            return date.toLocaleString();
+        }
+    </script>
 
 </body>
+<script src="_index.js"></script>
 
 </html>
 
-
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
